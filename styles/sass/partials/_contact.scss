@@ -1,0 +1,23 @@
+@use "./variables";
+
+.contactArticle {
+    background-color: variables.$lightGreen;
+    h2 {
+        font-size: 40px;
+        font-family: variables.$headingFont;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px;
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}

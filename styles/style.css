@@ -313,19 +313,102 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 40%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 75%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .skills .skillsFlex ul li {
-  padding: 10px 30px;
+  padding: 15px 30px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
 }
 
 .skillsFlex img {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
+          filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
+}
+
+.projectShowcase {
+  background-color: rgb(247, 244, 243);
+}
+.projectShowcase h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-top: 60px;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.projectShowcase .projectGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+.projectShowcase .projectGallery .items {
+  width: 35%;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+.projectShowcase .projectGallery .items h4 {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+.projectShowcase .projectGallery .items h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: rgb(63, 91, 72);
+  padding-bottom: 14px;
+}
+.projectShowcase .projectGallery .items p {
+  font-size: 14px;
+}
+.projectShowcase .projectGallery .items .projectButtonFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projectShowcase .projectGallery .items .projectButtonFlex a {
+  background-color: rgb(210, 156, 154);
+  padding: 10px 15px;
+  margin: 15px 10px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contactArticle {
+  background-color: rgb(186, 201, 166);
+}
+.contactArticle h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+.contactArticle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contactArticle ul li {
+  padding: 10px;
+}
+.contactArticle ul li img {
+  height: 20px;
+  width: 20px;
 }

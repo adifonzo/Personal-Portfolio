@@ -13,20 +13,23 @@
         ul {
             display: flex;
             flex-wrap: wrap;
-            width: 40%;
-            justify-content: center;
+            width: 75%;
+            justify-content: space-between;
             margin: auto;
-            padding-top: 20px;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
             li {
-                padding: 10px 30px;
+                padding: 15px 30px;
+                font-family: variables.$headingFont;
+                text-align: center;
+                color: white;
             }
         }
     }
 }
-// COLOR NOT APPLYING TO SVG 
-// COME BACK LATER
+
+// Didn't want to nest too far so continuing here
 .skillsFlex img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
 }

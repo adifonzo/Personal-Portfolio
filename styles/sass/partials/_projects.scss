@@ -1,0 +1,52 @@
+@use "./variables";
+
+.projectShowcase {
+    background-color: variables.$almostWhite;
+    h2 {
+        text-align: center;
+        font-family: variables.$headingFont;
+        padding-top: 60px;
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+    .projectGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 50px;
+        .items {
+            width: 35%;
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            img {
+
+            }
+            h4 {
+                font-family: variables.$headingFont;
+                padding-bottom: 10px;
+            }
+            h5 {
+                font-family: variables.$headingFont;
+                font-size: 12px;
+                color: variables.$darkGreen;
+                padding-bottom: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .projectButtonFlex {
+                display: flex;
+                a {
+                    background-color: variables.$pinkButton;
+                    padding: 10px 15px;
+                    margin: 15px 10px;
+                    font-size: 14px;
+                    font-family: variables.$headingFont;
+                }
+                
+            }
+        }
+    }
+
+}
