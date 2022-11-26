@@ -1,0 +1,40 @@
+@use "./variables";
+
+.homeHeader {
+    background-image: url(../assets/pexels-oleksandr-tiupa-192136.jpg);
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 90px;
+    h1 {
+        color: white;
+        font-family: variables.$headingFont;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 130px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+    }
+    .contactLinkButton {
+        background-color: variables.$pinkButton;
+        
+        padding: 10px 25px;
+    }
+    .headerNavbar {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                padding: 20px 35px;
+                color: white;
+                font-family: variables.$headingFont;
+            }
+        }
+    }
+}
+
+

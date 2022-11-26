@@ -1,0 +1,32 @@
+@use "./variables";
+
+.skills {
+    background-color: variables.$darkGreen;
+    h3 {
+        color: white;
+        text-align: center;
+        font-family: variables.$headingFont;
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    .skillsFlex {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            justify-content: center;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            li {
+                padding: 10px 30px;
+            }
+        }
+    }
+}
+// COLOR NOT APPLYING TO SVG 
+// COME BACK LATER
+.skillsFlex img {
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,24 @@
+@use "./variables";
+
+.aboutMeArticle {
+    img {
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+
+    }
+    h2 {
+        font-family: variables.$headingFont;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    p {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 60px;
+        font-family: variables.$paragraphFont;
+        font-weight: 400;
+    }
+}
