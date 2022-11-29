@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Aiden DiFonzo</title>
 </head>
@@ -15,105 +16,104 @@
         <nav class="headerNavbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav> <!-- headerNavbar ends -->
 
         <h1>Aiden DiFonzo</h1>
         <h3>Toronto Based Web Developer</h3>
         
-        <a class="contactLinkButton" href="contact.html">Get in Touch</a> 
-        <!-- COME BACK TO BEFORE SUBMIT-->
+        <a class="pinkButton getInTouch" href="#contact">Get in Touch</a> 
     </header> <!-- homeHeader ends -->
 
     <main>
-        <article class="aboutMeArticle">
-            <img src="https://placebear.com/125/125" alt=""> <!-- NEED TO FIND GOOD PHOTO-->
+        <article id="about" class="aboutMeArticle">
+            <img src="./assets/IMG_1431 2.jpg" alt="">
             <h2>About Me</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aperiam nulla necessitatibus fugit quae adipisci velit sed nostrum facere veritatis, reprehenderit, cupiditate laborum voluptatibus culpa enim? Praesentium accusantium illo dolore!</p>
+            <p>Hi, My name is Aiden DiFonzo and I am a Web Developer. I'm confident using HTML, CSS , JavaScript and React to build websites from scratch.</p>
+            <p>Before I started my journey in web development, I was just getting out of high school. I loved to code on the side, as I had slowly developed an interest in it from watching JavaScript projects on youtube. After graduation I worked at a research, design and manufacturing company as a production assistant. There, I learned hwo to follow instructions carefully, work collabratively, and meet deadlines on time.</p>
+            <p>In my free time, I like to be outside (heavily dependent on the season), exercise, listen to music, play video games and of course binge tv shows.</p>
         </article> <!-- aboutMeArticle ends -->
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h3>Skills</h3>
             <div class="skillsFlex">
                 <ul>
-                    <li><img src="./svg/html.svg" alt="html logo"><br>HTML</li>
-                    <li><img src="./svg/css.svg" alt="css logo"><br>CSS</li>
-                    <li><img src="./svg/sass.svg" alt="sass logo"><br>SASS</li>
-                    <li><img src="./svg/javascript.svg" alt="javascript logo"><br>JAVASCRIPT</li>
-                    <li><img src="./svg/react.svg" alt="react logo"><br>REACT</li>
-                    <li><img src="./svg/github.svg" alt="github logo"><br>GITHUB/GIT</li>
+                    <li><i class="devicon-html5-plain"></i>
+                    <br>HTML</li>
+                    <li><i class="devicon-css3-plain"></i><br>CSS</li>
+                    <li><i class="devicon-sass-original"></i><br>SASS</li>
+                    <li><i class="devicon-javascript-plain"></i><br>JAVASCRIPT</li>
+                    <li><i class="devicon-react-original"></i><br>REACT</li>
+                    <li><i class="devicon-github-original"></i><br>GITHUB/GIT</li>
+                    <li><i class="devicon-firebase-plain"></i><br>FIREBASE</li>
                 </ul>
             </div> <!-- skillsFlex ends -->
         </section> <!-- skills ends -->
 
-        <section class="projectShowcase">
+        <section id="projects" class="projectShowcase">
             <h2>Projects</h2>
             <ul class="projectGallery">
                 <li class="items item1">
-                    <img src="" alt="">
-                    <h4>Project Title</h4>
-                    <h5>HTML, CSS</h5>
+                    <img src="./assets/Screen Shot 2022-11-28 at 16.09.12.png" alt="picture of a boating website I built">
+                    <h4>Boat Ride Adventures</h4>
+                    <h5>HTML, CSS, SASS</h5>
                     <p class="projectSubheader">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta reiciendis voluptate
+                        This was my first multi-page project, I learned a lot about media queries and flexbox
                     </p> <!-- projectSubheader ends -->
                     <div class="projectButtonFlex">
-                        <a href="">View Live</a>
-                        <a href="">View Code</a>
+                        <a class="pinkButton" href="https://fantastic-torte-1b9b26.netlify.app/">View Live</a>
+                        <a class="pinkButton" href="https://github.com/adifonzo/AidenDiFonzoProject1">View Code</a>
                     </div> <!-- projectButtonFlex ends -->
                 </li> <!-- items item1 ends -->
 
                 <li class="items item2">
-                    <img src="" alt=""> 
-                    <h4>Project Title</h4>
-                    <h5>HTML, CSS</h5>
+                    <img src="./assets/Screen Shot 2022-11-28 at 16.11.40.png" alt=""> 
+                    <h4>Rick and Morty API (2 person project)</h4>
+                    <h5>HTML, CSS, SASS, JavaScript</h5>
                     <p class="projectSubheader">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta reiciendis voluptate
+                        In this project I learned how to make API calls to a website in order to get information back to display on my page
                     </p> <!-- projectSubheader ends -->
                     <div class="projectButtonFlex">
-                        <a href="">View Live</a>
-                        <a href="">View Code</a>
+                        <a class="pinkButton" href="https://aidendamanapiprojecttwo.netlify.app/">View Live</a>
+                        <a class="pinkButton" href="https://github.com/APIJunoProject/AidenDamanProjectTwo">View Code</a>
                     </div> <!-- projectButtonFlex ends -->
                 </li> <!-- items item2 ends -->
 
                 <li class="items item3">
-                    <img src="" alt=""> 
-                    <h4>Project Title</h4>
-                    <h5>HTML, CSS</h5>
+                    <img src="./assets/Screen Shot 2022-11-28 at 16.16.52.png" alt=""> 
+                    <h4>Dog API</h4>
+                    <h5>HTML, CSS, JQUERY</h5>
                     <p class="projectSubheader">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta reiciendis voluptate
+                        This was the first API project I ever built. It displays information about the selected dog breed
                     </p> <!-- projectSubheader ends -->
                     <div class="projectButtonFlex">
-                        <a href="">View Live</a>
-                        <a href="">View Code</a>
+                        <a class="pinkButton" href="https://benevolent-kitsune-a1dd3b.netlify.app/">View Live</a>
+                        <a class="pinkButton" href="https://github.com/adifonzo/Dog-Api">View Code</a>
                     </div> <!-- projectButtonFlex ends -->
                 </li> <!-- items item3 ends -->
-
-                <li class="items item4">
-                    <img src="" alt="">
-                    <h4>Project Title</h4>
-                    <h5>HTML, CSS</h5>
-                    <p class="projectSubheader">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta reiciendis voluptate
-                    </p> <!-- projectSubheader ends -->
-                    <div class="projectButtonFlex">
-                        <a href="">View Live</a>
-                        <a href="">View Code</a>
-                    </div> <!-- projectButtonFlex ends -->
-                </li> <!-- items item4 ends -->
             </ul> <!-- projectGallery ends -->
         </section> <!-- projectShowcase ends -->
 
-        <article class="contactArticle">
+        <article id="contact" class="contactArticle">
             <h2>Contact</h2>
             <ul>
-                <li><img src="./svg/linkedin.svg" alt="linkedin logo"><a href=""></a></img></li>
-                <li><img src="./svg/github.svg" alt="github logo"><a href="https://github.com/adifonzo"></a></img></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aidendifonzo/">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/adifonzo">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    
+                </li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas tenetur doloremque labore velit vero optio repellat reiciendis ut deserunt.</p>
-            <button class="emailAiden">Email Aiden</button>
+            <p>Please feel free to reach out via Email at any time, and I will be sure to get back to you as soon as I get the chance.</p>
+            <a class="pinkButton" href="mailto:aiden.difonzo@me.com">Email Aiden</a>
         </article> <!-- contactArticle ends -->
     </main>
     

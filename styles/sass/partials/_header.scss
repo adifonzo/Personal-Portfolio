@@ -18,18 +18,21 @@
         font-weight: 300;
         text-align: center;
     }
-    .contactLinkButton {
-        background-color: variables.$pinkButton;
-        
-        padding: 10px 25px;
+    .pinkButton {
+        display: block;
+        text-align: center;
+        width: 120px;
+        margin: 20px auto;
     }
     .headerNavbar {
         ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            width: 75%;
+            margin: auto;
 
             li {
-                padding: 20px 35px;
+                padding: 20px 0;
                 color: white;
                 font-family: variables.$headingFont;
             }

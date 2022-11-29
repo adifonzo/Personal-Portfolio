@@ -245,20 +245,23 @@ html {
   font-weight: 300;
   text-align: center;
 }
-.homeHeader .contactLinkButton {
-  background-color: rgb(210, 156, 154);
-  padding: 10px 25px;
+.homeHeader .pinkButton {
+  display: block;
+  text-align: center;
+  width: 120px;
+  margin: 20px auto;
 }
 .homeHeader .headerNavbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+  margin: auto;
 }
 .homeHeader .headerNavbar ul li {
-  padding: 20px 35px;
+  padding: 20px 0;
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -277,22 +280,33 @@ ul {
   list-style: none;
 }
 
+.pinkButton {
+  background-color: rgb(210, 156, 154);
+  padding: 10px 15px;
+  margin: 15px 10px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
 .aboutMeArticle img {
   border-radius: 50%;
   margin: auto;
   display: block;
+  height: 150px;
+  width: 150px;
 }
 .aboutMeArticle h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 20px;
   font-size: 40px;
+  padding-bottom: 20px;
 }
 .aboutMeArticle p {
   text-align: center;
   width: 50%;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-family: "Lora", serif;
   font-weight: 400;
 }
@@ -306,6 +320,8 @@ ul {
   font-family: "Roboto", sans-serif;
   padding-top: 60px;
   font-size: 40px;
+  padding-bottom: 20px;
+  margin-top: 80px;
 }
 .skills .skillsFlex ul {
   display: -webkit-box;
@@ -313,7 +329,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 75%;
+  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -321,17 +337,28 @@ ul {
   padding-bottom: 50px;
 }
 .skills .skillsFlex ul li {
-  padding: 15px 30px;
+  padding: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  width: 25%;
+  min-width: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.skillsFlex img {
-  height: 100px;
-  width: 100px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
-          filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
+.skills .skillsFlex ul li i {
+  color: white;
+  font-size: 80px;
+  padding-bottom: 20px;
 }
 
 .projectShowcase {
@@ -361,6 +388,11 @@ ul {
   margin: 20px;
   padding: 20px;
 }
+.projectShowcase .projectGallery .items img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .projectShowcase .projectGallery .items h4 {
   font-family: "Roboto", sans-serif;
   padding-bottom: 10px;
@@ -389,6 +421,7 @@ ul {
 
 .contactArticle {
   background-color: rgb(186, 201, 166);
+  padding-bottom: 30px;
 }
 .contactArticle h2 {
   font-size: 40px;
@@ -406,9 +439,47 @@ ul {
           justify-content: center;
 }
 .contactArticle ul li {
-  padding: 10px;
+  padding: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
-.contactArticle ul li img {
-  height: 20px;
-  width: 20px;
+.contactArticle ul li:hover, .contactArticle ul li:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.contactArticle ul li i {
+  color: white;
+  font-size: 25px;
+}
+.contactArticle p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.contactArticle .pinkButton {
+  display: block;
+  text-align: center;
+  width: 120px;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: rgb(63, 91, 72);
+}
+footer p {
+  text-align: center;
+  font-family: "Lora", serif;
+  padding: 10px 0;
+  color: white;
+}
+
+@media (max-width: 1400px) {
+  .skills .skillsFlex ul {
+    max-width: 60%;
+  }
+}
+@media (max-width: 550px) {
+  .projectGallery .items {
+    min-width: 75%;
+  }
 }

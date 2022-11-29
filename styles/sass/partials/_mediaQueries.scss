@@ -1,0 +1,20 @@
+@use "./variables";
+
+
+@media (max-width: 1400px) {
+    .skills {
+        .skillsFlex {
+            ul {
+                max-width: 60%;
+            }
+        }
+    }
+}
+ 
+@media (max-width: 550px) {
+    .projectGallery {
+        .items {
+            min-width: 75%;
+        }
+    }
+}

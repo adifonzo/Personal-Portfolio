@@ -1,3 +1,5 @@
+@use "./variables";
+
 * {
     padding: 0;
     margin: 0;
@@ -10,4 +12,12 @@ a {
 
 ul {
     list-style: none;
+}
+
+.pinkButton {
+    background-color: variables.$pinkButton;
+    padding: 10px 15px;
+    margin: 15px 10px;
+    font-size: 14px;
+    font-family: variables.$headingFont;
 }

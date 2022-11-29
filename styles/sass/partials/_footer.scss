@@ -1,0 +1,12 @@
+@use "./variables";
+
+footer {
+    background-color: variables.$darkGreen;
+    p {
+        text-align: center;
+        font-family: variables.$paragraphFont;
+        padding: 10px 0;
+        color: white;
+
+    }
+}

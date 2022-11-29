@@ -8,28 +8,37 @@
         font-family: variables.$headingFont;
         padding-top: 60px;
         font-size: 40px;
+        padding-bottom: 20px;
+        margin-top: 80px;
     }
     .skillsFlex {
         ul {
             display: flex;
             flex-wrap: wrap;
-            width: 75%;
+            width: 80%;
             justify-content: space-between;
             margin: auto;
             padding-bottom: 50px;
             li {
-                padding: 15px 30px;
+                padding: 20px;
                 font-family: variables.$headingFont;
                 text-align: center;
                 color: white;
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                width: 25%;
+                min-width: 130px;
+                align-items: center;
+                i {
+                    color: white;
+                    font-size: 80px;
+                    padding-bottom: 20px;
+                }
             }
         }
     }
 }
 
 // Didn't want to nest too far so continuing here
-.skillsFlex img {
-    height: 100px;
-    width: 100px;
-    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(151deg);
-}
+
